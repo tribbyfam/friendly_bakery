@@ -3,7 +3,7 @@ require 'sinatra'
 
 get '/' do
   "hello my bakery"
-  erb :home_layout
+  erb :home, { locals: { }, layout: :home_layout }
 end
 
 get '/home' do
