@@ -1,3 +1,4 @@
+
 class AllGoods 
   attr_accessor :name, :description, :price, :picture
 
@@ -10,24 +11,25 @@ class AllGoods
     @picture = picture
   end
 
-  def display
-    goods.each do |item|
-      define_method("#{goods}_name") do |arg|
-        puts "Name: #{goods}"
-        puts arg
-      end
-    end
-  end
+  # def display
+  #   goods.each do |item|
+  #     define_method("#{goods}_name") do |arg|
+  #       puts "Name: #{goods}"
+  #       puts arg
+  #     end
+  #   end
+  # end
 end
 
-goods = AllGoods.new
-AllGoods.cakes_details("Chocolate","Out of this world chocolaty heaven")
+my_cookie = AllGoods.new(title: "Chocolate",description: "Out of this world chocolaty heaven", price: "$29.99", image: "/images/cake1.jpeg")
+puts my_cookie.inspect
+# puts goods.cakes_name(title: "Chocolate","Out of this world chocolaty heaven")
 
 class Cookies < AllGoods
   
 end
 
-class Cookies < AllGoods
+class Cakes < AllGoods
   
 end
 
