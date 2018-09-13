@@ -13,80 +13,85 @@
     crossorigin="anonymous">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Materialize Theme</title>
+  <link rel="stylesheet" href="/main.css">
+  <link href="/images/favicon.jpeg" rel="icon" type="image/x-icon" />
+  <title>Friendly Bakery</title>
 </head>
 
-<body id="home" class="scrollspy">
+<body>
+<body id="home">
   <div class="navbar-fixed">
-    <nav class="green darken-3">
+    <nav class="teal lighten-2">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#home" class="brand-logo center">Main St Bakery</a>
-          <a href="#" data-activates="mobile-nav" class="button-collapse">
+          <a href="#home" class="brand-logo center"> <img src="/images/logo.png" alt="Main St logo"> </a>
+          <ul class="right hide-on-small-and-down">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="my-dropdown">Menu<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <a class="button-collapse" data-activates="mobile-nav" href="#my-dropdown">
             <i class="material-icons">menu</i>
           </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#search">Search</a>
-            </li>
-            <li>
-              <a href="#popular">Popular</a>
-            </li>
-            <li>
-              <a href="#gallery">Gallery</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
-  <ul class="side-nav" id="mobile-nav">
+
+  <ul id="my-dropdown" class="dropdown-content">
     <li>
-      <a href="#home">Home</a>
+      <a href="#!">Cookies</a>
     </li>
     <li>
-      <a href="#search">Cookies</a>
+      <a href="#!">Cakes</a>
     </li>
+    <li class="divider"></li>
     <li>
-      <a href="#popular">Cakes</a>
-    </li>
-    <li>
-      <a href="#gallery">Muffins</a>
-    </li>
-    <li>
-      <a href="#contact">Specials</a>
+      <a href="#!">Muffins</a>
     </li>
   </ul>
- 
+  
 
   <!-- Slider Section-->
   <section class="slider">
     <ul class="slides">
       <li>
-        <img src="/images/hero1.jpeg" alt="">
+        <img src="/images/hero0.jpg" alt="">
         <div class="caption center-align">
-          <h2>We offer variety of cookies</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Made fresh daily</h5>
+          <h2 class="red-text text-lighten-4">We offer variety of cookies</h2>
+          <h5 class="light yellow-text text-lighten-4 hide-on-small-only">Since 1923 Family Owned and Operated</h5>
         </div>
       </li>
       <li>
-        <img src="/images/hero3.jpeg" alt="">
+        <img src="/images/hero5.jpeg" alt="">
         <div class="caption left-align">
-          <h2>We make custom cakes</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Cakes for any occasion</h5>
+          <h2 class="pink-text text-lighten-4">We make custom cakes</h2>
+          <h5 class="light yellow-text text-lighten-4 hide-on-small-only">Cakes for any occasion</h5>
         </div>
       </li>
       <li>
-        <img src="/images/hero2.jpeg" alt="">
+        <img src="/images/hero7.jpeg" alt="">
         <div class="caption right-align">
-          <h2>Cupcakes, Muffins and more</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">One stop for all your pastry needs</h5>
+          <h2 class="pink-text text-lighten-4">Variety of Cupcakes</h2>
+          <h5 class="light yellow-text text-lighten-4 hide-on-small-only">One stop for all your pastry needs</h5>
+        </div>
+      </li>
+      <li>
+        <img src="/images/hero1.jpeg" alt="">
+        <div class="caption left-align">
+          <h2 class="pink-text text-lighten-4">Delicious Cookies</h2>
+          <h5 class="light yellow-text text-lighten-4 hide-on-small-only">Fresh cookies made daily</h5>
+        </div>
+      </li>
+      <li>
+        <img src="/images/hero2.jpg" alt="">
+        <div class="caption left-align">
+          <h2 class="pink-text text-lighten-4">Other pastries</h2>
+          <h5 class="light yellow-text text-lighten-4 hide-on-small-only">We fill many sugar needs</h5>
         </div>
       </li>
     </ul>
@@ -94,9 +99,49 @@
 
  <%= yield %>
 
+<!-- Section Contact -->
+  <section id="contact" class="section section-contact scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel teal lighten-2 white-text center">
+            <i class="material-icons medium">email</i>
+            <h5>Contact Us For Our Seasonal Catalog</h5>
+          
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel teal lighten-4">
+            <h5>Please fill out this form</h5>
+            <div class="input-field">
+              <input type="text" placeholder="Name" id="name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Email" id="email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" placeholder="Enter Message" id="message"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <input type="submit" value="Submit" class="btn teal">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Footer -->
 
-  <footer class="section teal darken-2 white-text center">
+  <footer class="section teal lighten-2 white-text center">
+    <div class="row">
+      <div class="col s12 m6">
+        <p class="flow-text">Address: <br>123 Main Street <br>Sayville NY 12345</p>
+      </div>
+      <div class="col s12 m6">
+        <p class="flow-text">Hours of operation: <br>Mon - Fri : 10am - 5pm <br>Sat - Sun : 9am - 4pm</p>
+      </div>
+    </div>
     <p class="flow-text">bakery &copy; 2018</p>
   </footer>
 
@@ -121,14 +166,6 @@
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.slider');
       var instances = M.Slider.init(elems, 'height: 400');
-    });
-    $('.autocomplete').autocomplete({
-      data: {
-        "Aruba": null,
-        "Cancun Mexico": null,
-        "Hawaii": null,
-        "California": null,
-      }
     });
 
     document.addEventListener('DOMContentLoaded', function () {
