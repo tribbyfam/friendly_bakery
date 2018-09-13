@@ -24,18 +24,25 @@
     <nav class="teal lighten-2">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#home" class="brand-logo center"> <img src="/images/logo.png" alt="Main St logo"> </a>
+          <a href="#home" class="brand-logo center"> <img id="logo" src="/images/logo.png" alt="Main St logo"> </a>
           <ul class="right hide-on-small-and-down">
             <li>
-              <a href="#">Home</a>
+              <a href="#{'/home'}">Home</a>
             </li>
             <li>
-              <a class="dropdown-trigger" href="#!" data-target="my-dropdown">Menu<i class="material-icons right">arrow_drop_down</i>
-              </a>
+              <a href="#{'/cookies'}">Cookies</a>
             </li>
-            <a class="button-collapse" data-activates="mobile-nav" href="#my-dropdown">
+            <li>
+              <a href="#{'/home'}">Cakes</a>
+            </li>
+            <li>
+              <a href="#{'/cakes'}">Muffins</a>
+              <%# <a class="dropdown-trigger" href="#!" data-target="my-dropdown">Menu<i class="material-icons right">arrow_drop_down</i>
+              </a> %>
+            </li>
+            <%# <a class="button-collapse" data-activates="mobile-nav" href="#my-dropdown">
             <i class="material-icons">menu</i>
-          </a>
+          </a> %>
           </ul>
         </div>
       </div>
@@ -44,14 +51,14 @@
 
   <ul id="my-dropdown" class="dropdown-content">
     <li>
-      <a href="#!">Cookies</a>
+      <a href="#{/cookies}">Cookies</a>
     </li>
     <li>
-      <a href="#!">Cakes</a>
+      <a href="#{/cakes}">Cakes</a>
     </li>
     <li class="divider"></li>
     <li>
-      <a href="#!">Muffins</a>
+      <a href="#{/muffins}">Muffins</a>
     </li>
   </ul>
   
@@ -99,38 +106,7 @@
 
  <%= yield %>
 
-<!-- Section Contact -->
-  <section id="contact" class="section section-contact scrollspy">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card-panel teal lighten-2 white-text center">
-            <i class="material-icons medium">email</i>
-            <h5>Contact Us For Our Seasonal Catalog</h5>
-          
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card-panel teal lighten-4">
-            <h5>Please fill out this form</h5>
-            <div class="input-field">
-              <input type="text" placeholder="Name" id="name">
-              <label for="name">Name</label>
-            </div>
-            <div class="input-field">
-              <input type="text" placeholder="Email" id="email">
-              <label for="email">Email</label>
-            </div>
-            <div class="input-field">
-              <textarea class="materialize-textarea" placeholder="Enter Message" id="message"></textarea>
-              <label for="message">Message</label>
-            </div>
-            <input type="submit" value="Submit" class="btn teal">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!-- Footer -->
 
   <footer class="section teal lighten-2 white-text center">

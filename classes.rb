@@ -1,21 +1,25 @@
 
 class AllGoods 
-  attr_accessor :name, :description, :price, :picture
+  attr_accessor :name, :description, :price, :src
 
-  goods = %w(cakes cookies muffins)
+  # goods = %w(cakes cookies muffins)
 
-  def initialize(title: title, description: description, price: price, image: image)
+  def initialize(title: title, description: description, price: price, src: src)
     @title = title
     @description = description
     @price = price
-    @image = image
+    @src = src
   end
 
   def display
     @title
     @description
     @price
-    @image
+    @src
+  end
+
+  def convert_PDF
+    "converted to PDF"
   end
 
   # def display
@@ -26,22 +30,4 @@ class AllGoods
   #     end
   #   end
   # end
-end
-
-my_cookie = AllGoods.new(title: "Chocolate",description: "Out of this world chocolaty heaven", price: "$29.99", image: "/images/cake1.jpeg")
-puts my_cookie.inspect
-
-
-# puts goods.cakes_name(title: "Chocolate","Out of this world chocolaty heaven")
-
-class Cookies < AllGoods
-  
-end
-
-class Cakes < AllGoods
-  
-end
-
-class Cookies < AllGoods
-  
 end

@@ -1,0 +1,16 @@
+body {
+  background-image: url('/public/images/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#logo {
+  height: 9vh;
+  width: 10vw;
+}
+
+footer {
+  font-size: 5em;
+}

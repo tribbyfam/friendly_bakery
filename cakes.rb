@@ -1,0 +1,11 @@
+cakes = [
+  ['Red Velvet', 'One of our most popular cakes, our red velvet is always moist and dense with a light chocolate flavor. It is perfectly paired when filled and frosted with our house vanilla buttercream. Red Velvet Amycakes are decorated with red velvet cake crumbs.', '$34.99', '../public/images/cake1.jpg'],
+  ['Almond Cheesecake', 'Homemade cheesecake with vanilla buttercream frosting and topped with our homemade fresh fruit glaze. Choose between our homemade cherry, raspberry, strawberry, or triple berry glazes.', '$36.99', './public/images/cake2.jpg'],
+  ['Banana Crumb', 'Made with the ripest bananas, this fresh Banana cake is extra moist on the inside and crunchy on the outside. Delicious banana cream filling will leave you asking for another slice.', '$19.99', '../public/images/cake3.jpeg'],
+  ['Tiramisu', 'Fancy taste without all the work. This cake is wonderful for a get together or just a special occasion at home.', '$34.99', '../public/images/cake.jpeg'],
+  ['Chocolate', 'Dark Chocolate cake infused with cream of coconut, filled with fudgy ganache, frosted with chocolate buttercream and beautifully decorated with white cream.', '$35.99', '../public/images/cake5.jpeg'],
+  ['Lemon', 'Lemon Cake is infused with fresh lemon cream, making it extra moist and dense. Filled and frosted with our lemon zested buttercream. Tastes like a buttery lemon cookie! ', '$32.99', '../public/images/cake6.jpeg'],
+  ['Italian Cream', 'Golden Vanilla cake with chopped pecans and coconut throughout the batter, filled and frosted with our house vanilla buttercream. Decorated with butter ganache cream and pecans.', '$33.99', '../public/images/cake7.jpg'],
+  ['Strawbery n Cream', 'Sweet and creamy cake filled with three layers of fresh strawberry compote and frosted with our house vanilla buttercream. The cake is decorated with white chocolate frosting and fresh strawberry halves.', '$34.99', '../public/images/cookies9.jpeg'],
+  ['Spring Vanilla', 'Light and sweet but moist and rich in flavor, our Vanilla Almond cake is filled and frosted with our house vanilla buttercream. Spring Vanilla Almond Amycakes are decorated with colorful pastel sprinkles and a ring of buttercream rosettes.', '$44.99', '../public/images/cake10.jpeg']
+]

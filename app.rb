@@ -1,4 +1,6 @@
 require 'sinatra'
+require_relative 'classes'
+require_relative 'cookies'
 
 
 get '/' do
@@ -12,7 +14,10 @@ end
 
 get '/cookies' do
   "hello my cookie page"
+  @cookies = Cookies
+
   erb :cookies
+
 end
 
 
