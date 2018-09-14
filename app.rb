@@ -1,5 +1,6 @@
 require 'sinatra'
 require './classes.rb'
+require 'sendgrid-ruby'
 
 
 get '/' do

@@ -78,5 +78,8 @@ DEPENDENCIES
   materialize (~> 0.4.5)
   sinatra
 
+RUBY VERSION
+   ruby 2.5.1p57
+
 BUNDLED WITH
    1.16.4
