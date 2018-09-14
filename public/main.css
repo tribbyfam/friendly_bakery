@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+  font-family: 'Marck Script', cursive;
 }
 
 #logo {
@@ -13,7 +13,7 @@ body {
 }
 
 .flow-text {
-  font-size: 0.8em !important;
+  font-size: 0.9em !important;
 }
 
 .slider {

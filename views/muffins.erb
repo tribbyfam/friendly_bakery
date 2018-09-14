@@ -1,169 +1,160 @@
 
-<%# first row %>
   <section id="muffins" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
-        <h4 class="center"><span class="teal-text">Our Delicious</span> Muffins and Cupcakes</h4>
+        <h4 class="center"><span class="teal-text">Our Muffins and Cupcakes</span> are simply the best</h4>
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins1.jpg">
+              <img class="activator" src="<%= @muffins[:muffin1].src %>">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin1].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin1].price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin1].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin1].description %></p>
             </div>
           </div> 
         </div>
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins10.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div> 
-        </div>
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins4.jpeg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <%# second row %>
+        <div class="col s12 m4">
+          <div class="card">  
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="<%= @muffins[:muffin2].src %>">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin2].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin2].price %></a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin2].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin2].description %></p>
+            </div>
+          </div> 
+        </div>
 
-  <section id="popular" class="section section-popular scrollspy">
-    <div class="container">
-      <div class="row">
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins2.jpeg">
+              <img class="activator" src="<%= @muffins[:muffin3].src %>">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin3].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin3].price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin3].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin3].description %></p>
             </div>
           </div> 
         </div>
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins5.png">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div> 
-        </div>
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins6.jpeg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <%# third row %>
+        <div class="col s12 m4">
+          <div class="card">  
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="<%= @muffins[:muffin4].src %>">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin4].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin4].price %></a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin4].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin4].description %></p>
+            </div>
+          </div> 
+        </div>
 
-  <section id="popular" class="section section-popular scrollspy">
-    <div class="container">
-      <div class="row">
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins8.jpeg">
+              <img class="activator" src="<%= @muffins[:muffin5].src %>">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin5].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin5].price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin5].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin5].description %></p>
             </div>
           </div> 
         </div>
+
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins7.jpeg">
+              <img class="activator" src="<%= @muffins[:muffin6].src %>">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin6].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin6].price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin6].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin6].description %></p>
             </div>
           </div> 
         </div>
+
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="/images/muffins9.jpeg">
+              <img class="activator" src="<%= @muffins[:muffin7].src %>">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chocolate Chip<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">details here</a></p>
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin7].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin7].price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin7].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin7].description %></p>
             </div>
           </div> 
         </div>
-        <div class="row">
-          <div class="col s12 center">
-            <a href="#contact" class="btn btn-large teal">
-              <i class="material-icons left">send</i>Subscribe to catalog
-            </a>
-          </div>
+
+        <div class="col s12 m4">
+          <div class="card">  
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="<%= @muffins[:muffin8].src %>">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin8].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin8].price %></a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin8].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin8].description %></p>
+            </div>
+          </div> 
         </div>
-      </div>
+
+        <div class="col s12 m4">
+          <div class="card">  
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="<%= @muffins[:muffin9].src %>">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+              <%= @muffins[:muffin9].title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= @muffins[:muffin9].price %></a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin9].title %><i class="material-icons right">close</i></span>
+              <p><%= @muffins[:muffin9].description %></p>
+            </div>
+          </div> 
+        </div>
+      </div>  
     </div>
   </section>
