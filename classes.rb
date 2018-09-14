@@ -2,7 +2,7 @@
 class AllGoods 
   attr_accessor :name, :description, :price, :src
 
-  def initialize(title: title, description: description, price: price, src: src)
+  def initialize(title:, description:, price:, src:)
     @title = title
     @description = description
     @price = price
