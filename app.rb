@@ -17,9 +17,7 @@ get '/cookies' do
   @cookies = Cookies
 
   erb :cookies
-
 end
-
 
 get '/cakes' do
   "hello my cakes page"
