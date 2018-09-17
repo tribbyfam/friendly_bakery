@@ -32,3 +32,12 @@ end
 class Muffins < AllGoods
   attr_accessor :title, :description, :price, :src
 end
+
+class Emailer
+  def send_email(from, subject, message)
+    @from = from
+    @subject = subject
+    @message = message
+    mail to 
+  end
+end

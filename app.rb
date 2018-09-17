@@ -1,6 +1,6 @@
 require 'sinatra'
 require './classes.rb'
-require 'sendgrid-ruby'
+include SendGrid
 
 
 get '/' do
@@ -67,6 +67,7 @@ muffin8 = Muffins.new(title: 'Black Beauty', description: 'These are mudd slide 
 muffin9 = Muffins.new(title: 'Berry Ghost', description: 'Delicious vanilla cupcakes, nicely ballanced with fresh berries for ultimate satisfaction', price: '$1.99/ea', src: '/images/muffins9.jpeg')
 
 get '/home' do
+
   erb :home, { locals: { }, layout: :home_layout }
 end
 
@@ -113,4 +114,23 @@ get '/muffins' do
     :muffin9 => muffin9
   }
   erb :muffins
+end 
+
+post '/contact' do
+  @catalog = catalog
+
+  from = Email.new(email: 'atriebw@gmail.com')
+  to = Email.new(email: params[:email_address])
+  subject = 'Requested catalog'
+  content = Content.new(type: 'text/html', value: erb(:catalog)
+  )
+  mail = Mail.new(from, subject, to, content)
+  sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+  response = sg.client.mail._('send').post(request_body: mail.to_json)
+  puts response.status_code
+  puts response.body
+  puts response.parsed_body
+  puts response.headers
+
+  erb :contact
 end
