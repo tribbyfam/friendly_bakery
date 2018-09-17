@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <h4 class="center"><span class="teal-text">Our Muffins and Cupcakes</span> are simply the best</h4>
-        <div class="col s12 m4">
+        <!-- <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="<%= @muffins[:muffin1].src %>">
@@ -18,26 +18,26 @@
               <p><%= @muffins[:muffin1].description %></p>
             </div>
           </div> 
-        </div>
-
+        </div> -->
+        <% @muffins.each do |key, item| %>
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @muffins[:muffin2].src %>">
+              <img class="activator" src="<%= item.src %>">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">
-              <%= @muffins[:muffin2].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @muffins[:muffin2].price %></a></p>
+              <%= item.title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= item.price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @muffins[:muffin2].title %><i class="material-icons right">close</i></span>
-              <p><%= @muffins[:muffin2].description %></p>
+              <span class="card-title grey-text text-darken-4"><%= item.title %><i class="material-icons right">close</i></span>
+              <p><%= item.description %></p>
             </div>
           </div> 
         </div>
-
-        <div class="col s12 m4">
+      <% end %>
+       <!--  <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="<%= @muffins[:muffin3].src %>">
@@ -157,4 +157,4 @@
         </div>
       </div>  
     </div>
-  </section>
+  </section> -->

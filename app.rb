@@ -1,5 +1,6 @@
 require 'sinatra'
 require './classes.rb'
+require 'sendgrid-ruby'
 include SendGrid
 
 
@@ -116,21 +117,44 @@ get '/muffins' do
   erb :muffins
 end 
 
+get '/catalog' do
+  @catalog = {
+    :muffin1 => muffin1,
+    :muffin2 => muffin2,
+    :muffin3 => muffin3,
+    :muffin4 => muffin4,
+    :muffin5 => muffin5,
+    :muffin6 => muffin6,
+    :muffin7 => muffin7,
+    :muffin8 => muffin8,
+    :muffin9 => muffin9
+  }
+  erb :muffins
+end 
+
+
 post '/contact' do
-  @catalog = catalog
+  @cookies = {
+    :cookie1 => cookie1,
+    :cookie2 => cookie2,
+    :cookie3 => cookie3,
+    :cookie4 => cookie4,
+    :cookie5 => cookie5,
+    :cookie6 => cookie6,
+    :cookie7 => cookie7,
+    :cookie8 => cookie8,
+    :cookie9 => cookie9
+  }
+  @name = params[:name]
+  puts params[:email]
 
   from = Email.new(email: 'atriebw@gmail.com')
-  to = Email.new(email: params[:email_address])
+  to = Email.new(email: params[:email])
   subject = 'Requested catalog'
-  content = Content.new(type: 'text/html', value: erb(:catalog)
-  )
+  content = Content.new(type: 'text/html', value: erb(:catalog))
   mail = Mail.new(from, subject, to, content)
   sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
   response = sg.client.mail._('send').post(request_body: mail.to_json)
-  puts response.status_code
-  puts response.body
-  puts response.parsed_body
-  puts response.headers
-
-  erb :contact
+  
+  erb :contact 
 end
