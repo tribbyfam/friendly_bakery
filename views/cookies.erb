@@ -4,160 +4,24 @@
     <div class="container">
       <div class="row">
         <h4 class="center"><span class="teal-text">Our Cookies</span> fresh and delicious</h4>
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie1].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie1].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie1].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie1].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie1].description %></p>
-            </div>
-          </div> 
-        </div>
+
+      <% @cookies.each do |keys, item| %>
 
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie2].src %>">
+              <img class="activator" src="<%= item.src %>">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie2].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie2].price %></a></p>
+              <%= item.title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= item.price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie2].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie2].description %></p>
+              <span class="card-title grey-text text-darken-4"><%= item.title %><i class="material-icons right">close</i></span>
+              <p><%= item.description %></p>
             </div>
           </div> 
         </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie3].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie3].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie3].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie3].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie3].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie4].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie4].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie4].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie4].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie4].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie5].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie5].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie5].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie5].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie5].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie6].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie6].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie6].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie6].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie6].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie7].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie7].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie7].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie7].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie7].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie8].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie8].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie8].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie8].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie8].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cookies[:cookie9].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cookies[:cookie9].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cookies[:cookie9].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cookies[:cookie9].title %><i class="material-icons right">close</i></span>
-              <p><%= @cookies[:cookie9].description %></p>
-            </div>
-          </div> 
-        </div>
-      </div>  
-    </div>
-  </section>
-    
+      <% end %>
         

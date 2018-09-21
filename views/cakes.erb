@@ -3,158 +3,24 @@
     <div class="container">
       <div class="row">
         <h4 class="center"><span class="teal-text">Our Cakes</span> for all occasions</h4>
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake1].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake1].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake1].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake1].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake1].description %></p>
-            </div>
-          </div> 
-        </div>
+
+      <% @cakes.each do |keys, item| %>
 
         <div class="col s12 m4">
           <div class="card">  
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake2].src %>">
+              <img class="activator" src="<%= item.src %>">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake2].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake2].price %></a></p>
+              <%= item.title %><i class="material-icons right">more_vert</i></span>
+              <p><a href="#"><%= item.price %></a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake2].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake2].description %></p>
+              <span class="card-title grey-text text-darken-4"><%= item.title %><i class="material-icons right">close</i></span>
+              <p><%= item.description %></p>
             </div>
           </div> 
         </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake3].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake3].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake3].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake3].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake3].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake4].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake4].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake4].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake4].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake4].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake5].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake5].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake5].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake5].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake5].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake6].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake6].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake6].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake6].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake6].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake7].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake7].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake7].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake7].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake7].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake8].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake8].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake8].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake8].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake8].description %></p>
-            </div>
-          </div> 
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card">  
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="<%= @cakes[:cake9].src %>">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">
-              <%= @cakes[:cake9].title %><i class="material-icons right">more_vert</i></span>
-              <p><a href="#"><%= @cakes[:cake9].price %></a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><%= @cakes[:cake9].title %><i class="material-icons right">close</i></span>
-              <p><%= @cakes[:cake9].description %></p>
-            </div>
-          </div> 
-        </div>
-      </div>  
-    </div>
-  </section>
+      <% end %>
+        
