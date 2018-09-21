@@ -17,11 +17,11 @@ body {
 }
 
 .slider {
-  height: 450px;
+  height: 450px !important;
 }
 
 .slides {
-  height: 450px;
+  height: 600px;
 }
 
 .catalog {
