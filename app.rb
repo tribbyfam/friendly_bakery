@@ -119,6 +119,24 @@ end
 
 get '/catalog' do
   @catalog = {
+    :cookie1 => cookie1,
+    :cookie2 => cookie2,
+    :cookie3 => cookie3,
+    :cookie4 => cookie4,
+    :cookie5 => cookie5,
+    :cookie6 => cookie6,
+    :cookie7 => cookie7,
+    :cookie8 => cookie8,
+    :cookie9 => cookie9,
+    :cake1 => cake1,
+    :cake2 => cake2,
+    :cake3 => cake3,
+    :cake4 => cake4,
+    :cake5 => cake5,
+    :cake6 => cake6,
+    :cake7 => cake7,
+    :cake8 => cake8,
+    :cake9 => cake9,
     :muffin1 => muffin1,
     :muffin2 => muffin2,
     :muffin3 => muffin3,
@@ -129,22 +147,11 @@ get '/catalog' do
     :muffin8 => muffin8,
     :muffin9 => muffin9
   }
-  erb :muffins
+  erb :catalog
 end 
 
-
 post '/contact' do
-  @cookies = {
-    :cookie1 => cookie1,
-    :cookie2 => cookie2,
-    :cookie3 => cookie3,
-    :cookie4 => cookie4,
-    :cookie5 => cookie5,
-    :cookie6 => cookie6,
-    :cookie7 => cookie7,
-    :cookie8 => cookie8,
-    :cookie9 => cookie9
-  }
+
   @name = params[:name]
   puts params[:email]
 
