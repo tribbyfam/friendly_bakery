@@ -8,7 +8,7 @@ body {
 }
 
 #logo {
-  height: 9vh;
+  height: 10vh;
   width: 10vw;
 }
 
@@ -17,13 +17,23 @@ body {
 }
 
 .slider {
-  height: 450px !important;
+  height: 460px;
 }
 
 .slides {
-  height: 600px;
+  height: 800px;
 }
 
 .catalog {
   font-size: 1.2em;
+}
+
+.thanks {
+  padding-top: 30vh;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.email-thanks {
+  height: 100vh;
 }
